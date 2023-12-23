@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.08003pt}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+
+\input{components/layout/header}
+\input{components/education/undergraduate}
+
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Experience
+  % \small {\href{https://sanjibsen.com/resume}{(More on: sanjibsen.com/resume)}}
+ }
+\resumeSubHeadingListStart
+\input{components/work/swe/waitless}
+\input{components/work/ra/bracu}
+\input{components/work/swe/bevycommerce}
+\input{components/work/ra/buet}
+\input{components/work/ta/bracu}
+\input{components/work/swe/sohopathi}
+\input{components/work/swe/penguin}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects
+  % \small {\href{https://sanjibsen.com/projects}{(More on: sanjibsen.com/projects)}}
+ }
+\resumeSubHeadingListStart
+\input{components/projects/envshh.tex}
+\input{components/projects/weblatex.tex}
+\input{components/projects/kwikpic.tex}
+\input{components/projects/senos.tex}
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills
+  % \small{\href{https://www.sanjibsen.com/resume\#25ae741b715a41789651f33ebfcfd284}{(More on: sanjibsen.com/resume)}}
+ }
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \input{components/skills/languages.tex}
+                \input{components/skills/development.tex}
+                \input{components/skills/ai.tex}
+                \input{components/skills/others.tex}
+          }}
+\end{itemize}
+
+
+\section{Research \& Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                (WIP) \textbf{(ML)}{ Improving the accuracy of ensemble components using weighted stacking (\textbf{First Author})} \\
+                (UR | Q1) \textbf{(DL)}{ Unveiling Shadows: A Data-driven Insight on Depression among Bangladeshi  Students (\textbf{First Author})} \\
+                \textbf{(NLP - IEEE)}{ Estimating the Status of Legal Proceedings using Sequential Text Data (Second Author)} \\
+          }}
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                (2023) \textbf{Top 10}{: "Unveiling Shadows: A Data-driven Insight on Depression among Bangladeshi University Students" journal listed on \textbf{SSRN's Global Top Ten} download list in Psychiatry Journals category} \\
+                (2022) \textbf{2nd}{: Out of \textbf{800+ candidates} in inter-university talent hunt program organized by Bangladesh's largest fintech} \\
+                (2021) \textbf{Top 10}{: Presented student paper on the 8th \textbf{International Conference on Network Systems and Security}} \\
+                (2021) \textbf{1st}{: Out of \textbf{3500+ participants} in programming contest organized by country's leading edtech platform} \\
+                (2020, 2021) \textbf{Top 3}{: Out of \textbf{500+ participants} in Intra-university competitive programming contest, BRAC University}
+          }}
+\end{itemize}
+
+
+
+% %-----------LEADERSHIP EXPERIENCE-----------
+\section{Leadership Experience
+  % \small{\href{https://www.sanjibsen.com/resume\#d1cd06362fad4007a7e16ea57824540e}{(More on: sanjibsen.com/resume)}}
+ }
+\resumeSubHeadingListStart
+\resumeSubheading
+{Mentor}{Sept. 2023}
+{\textbf{University of Birmingham}}{Birmingham, United Kingdom}
+\resumeItemListStart
+\resumeItem{Reviewed Final-Year Student Projects and provided suggestions and career insights as an Industry Professional}
+\resumeItemListEnd
+
+\resumeSubheading
+{Director}{May 2019 -- Aug. 2022}
+{BRAC University Computer Club}{Dhaka, Bangladesh}
+\resumeItemListStart
+\resumeItem{Managed \textbf{500+ general members and 70 Executives to host 40+ international} seminars, workshops, olympiads and contests with \textbf{10k+ participants} in 3 years}
+% \resumeItem{Hosted workshops about Git, and Linux with developers from Twitter with 500+ participants}
+% \resumeItem{Hosted International Iranian Geometry Olympiad, Nationwide Programming Contests with 10K+ participants}
+\resumeItemListEnd
+
+% \resumeSubheading
+%   {Student Mentor/Advisor}{Aug. 2021 -- Dec. 2022}
+%   {BRAC University}{Dhaka, Bangladesh}
+%   \resumeItemListStart
+%     \resumeItem{Have done mentorship of 70+ students relating to course selection, career suggestion, academic result improvement, inspiration, and mental health}
+%   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Video Tutorials}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                - \textbf{(NLP)} Techniques to Estimate the Status of Legal Proceedings Considering Sequential Text Data \\
+                - \textbf{(NLP)} Usage of Lexicons for Sentiment, Affect, and Connotation \\
+                - \textbf{(NLP)} Usage of Unix tools for Crude  Tokenization and Normalization \\
+          }}
+\end{itemize}
+
+\section{Articles}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                - Ram Optimization: How Random Access Memory works in different Operating Systems \\
+                - ARM Architecture: Could this be the future of computing? \\
+                - 600 Mile Distance: A real-life story on how a scripting algorithm for SMTP server can seriously affect humankind \\
+                % - Windows and Security in 2020: How to secure your Windows PC from Viruses, Trojans, Ransomware and Malware \\
+          }}
+\end{itemize}
+%-------------------------------------------
+\end{document}
