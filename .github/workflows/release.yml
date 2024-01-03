@@ -11,8 +11,8 @@ jobs:
         with:
           working_directory: src
           root_file: |
-            src/cv.tex
-            src/resume.tex
+            cv.tex
+            resume.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
