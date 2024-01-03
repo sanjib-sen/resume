@@ -13,23 +13,15 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: src
-          root_file: |
-            cv.tex
-            resume.tex
-      - name: Checking Files
-        run: ls -a && cd src && ls -a
+          root_file: *.tex
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: RELEASE.md
-          files: |
-            src/cv.pdf
-            src/resume.pdf
+          files: src/*.pdf
           name: Download Resume
       - name: Upload to gdrive
         uses: adityak74/google-drive-upload-git-action@main
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           credentials: ${{ secrets.credentials }}
           filename: "src/*.pdf"
