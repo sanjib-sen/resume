@@ -13,10 +13,12 @@ jobs:
           root_file: |
             cv.tex
             resume.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: PDF
-          path: |
-            cv.pdf
-            resume.pdf
+          body_path: RELEASE.md
+          files: |
+            cv.tex
+            resume.tex
+          name: Download Resume
