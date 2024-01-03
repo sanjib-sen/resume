@@ -15,7 +15,6 @@ jobs:
             resume.tex
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: RELEASE.md
           files: |
