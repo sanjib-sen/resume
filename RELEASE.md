@@ -1,5 +1,3 @@
-# Download Resume
-
 Download the Resume of Sanjib Kumar Sen. Please note that there are two versions available
   - 1 Page Resume
   - 3 Pages full CV (Recommended)

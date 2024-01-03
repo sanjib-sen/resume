@@ -1,4 +1,4 @@
-name: Compile Resume
+name: Compile and Publish
 on:
   push:
     tags:
@@ -26,4 +26,4 @@ jobs:
           credentials: ${{ secrets.credentials }}
           filename: "src/*.pdf"
           folderId: "19MLkW83T63CDFbVnXhbZ_6E_3CLpIGgw"
-          overwrite: "true" # optional boolean
+          overwrite: "true"
