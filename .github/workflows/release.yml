@@ -19,6 +19,6 @@ jobs:
         with:
           body_path: RELEASE.md
           files: |
-            cv.tex
-            resume.tex
+            cv.pdf
+            resume.pdf
           name: Download Resume
