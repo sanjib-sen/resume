@@ -1,0 +1,226 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.08003pt}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingClear}[1]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+
+\input{layout/header}
+\input{components/education/undergraduate}
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Experience
+  % \small {\href{https://sanjibsen.com/resume}{(More on: sanjibsen.com/resume)}}
+ }
+\resumeSubHeadingListStart
+\input{components/work/swe/waitless}
+\input{components/work/ra/bracu}
+% \input{components/work/swe/bevycommerce}
+\input{components/work/ra/buet}
+\input{components/work/ta/bracu}
+% \input{components/work/swe/sohopathi}
+% \input{components/work/swe/penguin}
+\input{components/work/instructor/bucc}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects
+  % \small {\href{https://sanjibsen.com/projects}{(More on: sanjibsen.com/projects)}}
+ }
+\resumeSubHeadingListStart
+\input{components/projects/resume.tex}
+\input{components/projects/envshh.tex}
+\input{components/projects/weblatex.tex}
+\input{components/projects/kwikpic.tex}
+\input{components/projects/senos.tex}
+\input{components/projects/ride-bracu.tex}
+\input{components/projects/buxwrapper.tex}
+\input{components/projects/stream-music.tex}
+\resumeSubHeadingListEnd
+
+% %-----------SKILLS-----------
+\section{Skills
+  % \small{\href{https://www.sanjibsen.com/resume\#25ae741b715a41789651f33ebfcfd284}{(More on: sanjibsen.com/resume)}}
+ }
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \input{components/skills/languages.tex}
+                    \input{components/skills/development.tex}
+                    \input{components/skills/ai.tex}
+                    \input{components/skills/others.tex}
+              }}
+\end{itemize}
+
+% %-----------RESEARCH & PUBLICATIONS-----------
+\section{Research \& Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \input{components/research/ensemble.tex}
+                    \input{components/research/depression.tex}
+                    \input{components/research/judgement.tex}
+              }}
+\end{itemize}
+
+% %-----------ACHIEVEMENTS & AWARDS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \input{components/achievements/weblatex.tex}
+                    \input{components/achievements/ssrn.tex}
+                    \input{components/achievements/btechwhiz.tex}
+                    \input{components/achievements/nsys.tex}
+                    \input{components/achievements/sohopathi.tex}
+                    \input{components/achievements/bracu.tex}
+              }}
+\end{itemize}
+
+% %-----------LEADERSHIP EXPERIENCE-----------
+\section{Leadership Experience
+  % \small{\href{https://www.sanjibsen.com/resume\#d1cd06362fad4007a7e16ea57824540e}{(More on: sanjibsen.com/resume)}}
+ }
+\resumeSubHeadingListStart
+\input{components/mentorship/birmingham.tex}
+\input{components/mentorship/bucc.tex}
+\resumeSubHeadingListEnd
+
+% %-----------RESEARCH INTERESTS-----------
+\section{Research Interests}
+\resumeSubHeadingListStart
+\resumeSubheadingClear
+{Distributive Computing / ML, IoT}
+\input{components/interests/distributive.tex}
+\resumeSubheadingClear
+{Machine Learning, Artificial Intelligence}
+\input{components/interests/ml.tex}
+\resumeSubheadingClear
+{Optimization, Compiler and Programming}
+\input{components/interests/optimization.tex}
+\resumeSubHeadingListEnd
+
+% %-----------VIDEO TUTORIALS-----------
+\section{Video Tutorials}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \input{components/videos/unix.tex}
+                    \input{components/videos/lexicon.tex}
+                    \input{components/videos/judgement.tex}
+              }}
+\end{itemize}
+
+% %-----------ARTICLES-----------
+\section{Articles}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \input{components/articles/malloc.tex}
+                    \input{components/articles/ram.tex}
+                    \input{components/articles/arm.tex}
+                    \input{components/articles/600m.tex}
+                    \input{components/articles/security.tex}
+              }}
+\end{itemize}
+%-------------------------------------------
+
+\end{document}
