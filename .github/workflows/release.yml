@@ -1,4 +1,4 @@
-name: Compile Resume LaTeX document
+name: Compile Resume
 on:
   push:
     tags:
@@ -14,13 +14,13 @@ jobs:
         with:
           working_directory: src
           root_file: "*.tex"
-      - name: Release
+      - name: Publish to GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
           body_path: RELEASE.md
           files: src/*.pdf
           name: Download Resume
-      - name: Upload to gdrive
+      - name: Upload to Google Drive
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.credentials }}
