@@ -13,6 +13,10 @@ jobs:
           root_file: |
             cv.tex
             resume.tex
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create annotation for build error
+        run: echo "ls -a && cd src && ls -a"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
