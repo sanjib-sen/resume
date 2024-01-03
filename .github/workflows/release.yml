@@ -9,6 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
+          working_directory: src
           root_file: |
             src/cv.tex
             src/resume.tex
