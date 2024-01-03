@@ -13,8 +13,6 @@ jobs:
           root_file: |
             cv.tex
             resume.tex
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Checking Files
         run: ls -a && cd src && ls -a
       - name: Release
