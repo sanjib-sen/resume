@@ -15,8 +15,8 @@ jobs:
             resume.tex
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create annotation for build error
-        run: echo "ls -a && cd src && ls -a"
+      - name: Checking Files
+        run: ls -a && cd src && ls -a
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -33,5 +33,4 @@ jobs:
           credentials: ${{ secrets.credentials }}
           filename: "src/*.pdf"
           folderId: "19MLkW83T63CDFbVnXhbZ_6E_3CLpIGgw"
-          name: "documentation.zip" # optional string
           overwrite: "true" # optional boolean
