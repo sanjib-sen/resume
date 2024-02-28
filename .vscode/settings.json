@@ -31,6 +31,7 @@
 	// Edit the following property to change export directory
 	"latex-workshop.latex.outDir": "./../PDF",
 	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.clean.method": "glob",
 	"latex-workshop.latex.build.forceRecipeUsage": false,
 	"latex-workshop.synctex.afterBuild.enabled": true,
 	"latex-workshop.view.pdf.viewer": "tab",
@@ -39,7 +40,7 @@
 		"-output-directory=PDF", // to change the output directory
 		"%DOC%"
 	],
-	"latex-workshop.latex.autoBuild.run": "never",
+	"latex-workshop.latex.autoBuild.run": "onSave",
 	// Remove / comment the next 3 lines to remove dark view for pdf
 	// "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
 	// "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
