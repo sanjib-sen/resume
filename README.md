@@ -5,6 +5,8 @@
 [![View on Google Drive](https://img.shields.io/badge/View%20on%20Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white "View on Google Drive")](https://drive.google.com/drive/folders/19MLkW83T63CDFbVnXhbZ_6E_3CLpIGgw)
 [![Download My CV](https://custom-icon-badges.demolab.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download PDF")](https://github.com/sanjib-sen/resume/releases/latest)
 
+[![Compile and Publish](https://github.com/sanjib-sen/resume/actions/workflows/release.yml/badge.svg)](https://github.com/sanjib-sen/resume/actions/workflows/release.yml)
+
 </div>
 
 ## Features
