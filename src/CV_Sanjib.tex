@@ -116,10 +116,11 @@
   % \small {\href{https://sanjibsen.com/resume}{(More on: sanjibsen.com/resume)}}
  }
 \resumeSubHeadingListStart
+\input{components/work/swe/tml}
 \input{components/work/swe/waitless}
 \input{components/work/ra/bracu}
 \input{components/work/swe/bevycommerce}
-\input{components/work/ra/buet}
+% \input{components/work/ra/buet}
 \input{components/work/ta/bracu}
 \input{components/work/swe/sohopathi}
 \input{components/work/swe/penguin}
@@ -158,11 +159,23 @@
 \section{Research \& Publications}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-                    \input{components/research/ensemble.tex}
-                    \input{components/research/depression.tex}
-                    \input{components/research/judgement.tex}
-              }}
+                \input{components/research/depression.tex}
+                \input{components/research/judgement.tex}
+                \input{components/research/ensemble.tex}
+            }}
 \end{itemize}
+
+%-----------CONFERENCES-----------
+\section{Conferences
+  % \small {\href{https://sanjibsen.com/projects}{(More on: sanjibsen.com/projects)}}
+ }
+\resumeSubHeadingListStart
+\input{components/conferences/nsyss.tex}
+\input{components/conferences/esci.tex}
+
+\resumeSubHeadingListEnd
+
+
 
 % %-----------ACHIEVEMENTS & AWARDS-----------
 \section{Achievements}
@@ -171,7 +184,7 @@
                     \input{components/achievements/weblatex.tex}
                     \input{components/achievements/ssrn.tex}
                     \input{components/achievements/btechwhiz.tex}
-                    \input{components/achievements/nsys.tex}
+                    \input{components/achievements/nsyss.tex}
                     \input{components/achievements/sohopathi.tex}
                     \input{components/achievements/bracu.tex}
               }}
@@ -183,22 +196,23 @@
  }
 \resumeSubHeadingListStart
 \input{components/mentorship/birmingham.tex}
+\input{components/mentorship/bracu.tex}
 \input{components/mentorship/bucc.tex}
 \resumeSubHeadingListEnd
 
 % %-----------RESEARCH INTERESTS-----------
-\section{Research Interests}
-\resumeSubHeadingListStart
-\resumeSubheadingClear
-{Distributive Computing / ML, IoT}
-\input{components/interests/distributive.tex}
-\resumeSubheadingClear
-{Machine Learning, Artificial Intelligence}
-\input{components/interests/ml.tex}
-\resumeSubheadingClear
-{Optimization, Compiler and Programming}
-\input{components/interests/optimization.tex}
-\resumeSubHeadingListEnd
+% \section{Research Interests}
+% \resumeSubHeadingListStart
+% \resumeSubheadingClear
+% {Distributive Computing / ML, IoT}
+% \input{components/interests/distributive.tex}
+% \resumeSubheadingClear
+% {Machine Learning, Artificial Intelligence}
+% \input{components/interests/ml.tex}
+% \resumeSubheadingClear
+% {Optimization, Compiler and Programming}
+% \input{components/interests/optimization.tex}
+% \resumeSubHeadingListEnd
 
 % %-----------VIDEO TUTORIALS-----------
 \section{Video Tutorials}
